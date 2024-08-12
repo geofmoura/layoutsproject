@@ -1,0 +1,28 @@
+/* print.css */
+
+/* Ocultar elementos que não precisam aparecer no PDF */
+header, footer {
+    display: none;
+}
+
+/* Ajustar corpo e layout */
+body {
+    font-size: 12pt;
+    margin: 20mm;
+}
+
+.container, .card, .invoice-form {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+}
+
+/* Ajustar formulário */
+.invoice-form {
+    padding: 10mm;
+}
+
+/* Adicionar quebras de página se necessário */
+.card, .invoice-form {
+    page-break-inside: avoid;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatura</title>
+    <link rel="stylesheet" href="/src/fatura.css">
+</head>
+<body>
+    <div class="invoice">
+        <header>
+            <h1>Fatura</h1>
+            <div class="company-info">
+                <p><strong>Empresa XYZ</strong></p>
+                <p>Rua das Flores, 123</p>
+                <p>Cidade, Estado, 12345-678</p>
+                <p>CNPJ: 12.345.678/0001-90</p>
+            </div>
+        </header>
+        
+        <section class="customer-info">
+            <h2>Informações do Cliente</h2>
+            <p><strong>Nome do Cliente</strong></p>
+            <p>Rua do Cliente, 456</p>
+            <p>Cidade, Estado, 87654-321</p>
+            <p>CPF: 123.456.789-00</p>
+        </section>
+        
+        <section class="invoice-details">
+            <h2>Detalhes da Fatura</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Produto A</td>
+                        <td>2</td>
+                        <td>R$ 50,00</td>
+                        <td>R$ 100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Produto B</td>
+                        <td>1</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Subtotal</td>
+                        <td>R$ 250,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Impostos</td>
+                        <td>R$ 25,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td><strong>R$ 275,00</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        
+        <footer>
+            <p>Obrigado por seu negócio!</p>
+        </footer>
+    </div>
+</body>
+</html>
